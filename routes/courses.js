@@ -31,7 +31,7 @@ router.get('/', function(req, res) {
     }];
     router.post('/', (req, res) => {
         if(!req.body.name || req.body.name.length < 3){
-            res.status(400).send('Error in posting');
+            res.status(400).send('Error in posting rest api');
             return;
         }
         const course = { 
